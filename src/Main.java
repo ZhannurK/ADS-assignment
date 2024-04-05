@@ -8,15 +8,17 @@ public class Main{
         for (int i = 0; i < n; i++){
             arr[i] = scanner.nextInt();
         }
-        System.out.println(average(n, arr));
+        System.out.println(FindMin(n, arr));
     }
 
-    public static double average(int n, int[] arr){
-        int sum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            sum += arr[i];
+    public static double FindMin(int n, int[] arr){
+        int minel = arr[0];
+        for (int i = 0; i < n; i++){
+            if (arr[i] < minel){
+                minel = arr[i];
+            }
         }
-        return (double) sum / arr.length;
+        return minel;
     }
 
 }
