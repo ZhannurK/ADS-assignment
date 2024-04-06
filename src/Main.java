@@ -1,23 +1,16 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int n = 7;
-        if (isPrime(n)) {
-            System.out.println("Prime");
-        } else {
-            System.out.println("Composite");
-        }
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        System.out.println(fibonacci(n));
     }
 
-    public static boolean isPrime(int n) {
+    public static int fibonacci(int n) {
         if (n <= 1) {
-            return false;
+            return n;
         }
-        for (int i = 2; i <= Math.sqrt(n); i++) {
-            if (n % i == 0) {
-                return false;
-            }
-        }
-        return true;
+        return fibonacci(n - 1) + fibonacci(n - 2);
     }
-
 }
