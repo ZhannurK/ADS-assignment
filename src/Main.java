@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static boolean isAllDigits(String s) {
-        if (s.length() == 0) {
+        if (s.isEmpty()) { // or if (s.length() == 0)
             return true;
         }
         char firstChar = s.charAt(0);
