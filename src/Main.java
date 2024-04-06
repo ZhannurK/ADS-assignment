@@ -1,25 +1,24 @@
 import java.util.Scanner;
 
 public class Main {
+    public static boolean isAllDigits(String s) {
+        if (s.length() == 0) {
+            return true;
+        }
+        char firstChar = s.charAt(0);
+        if (!Character.isDigit(firstChar)) {
+            return false;
+        }
+        return isAllDigits(s.substring(1));
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        int[] arr = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = scanner.nextInt();
+        String input = scanner.nextLine();
+        if (isAllDigits(input)) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
         }
-        reverseArray(arr, 0, n - 1);
-        for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + " ");
-        }
-    }
-    public static void reverseArray(int[] arr, int start, int end) {
-        if (start >= end) {
-            return;
-        }
-        int temp = arr[start];
-        arr[start] = arr[end];
-        arr[end] = temp;
-        reverseArray(arr, start + 1, end - 1);
     }
 }
