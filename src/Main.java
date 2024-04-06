@@ -1,23 +1,23 @@
 import java.util.Scanner;
 
 public class Main {
-    public static boolean isAllDigits(String s) {
-        if (s.isEmpty()) { // or if (s.length() == 0)
+    private static boolean isAllDigits(int n, String s){
+        if (s.isEmpty()){
             return true;
         }
-        char firstChar = s.charAt(0);
-        if (!Character.isDigit(firstChar)) {
+        if(!Character.isDigit(s.charAt(n))){
             return false;
         }
-        return isAllDigits(s.substring(1));
+        return isAllDigits(n+1,s);
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String n = scanner.nextLine();
-        if (isAllDigits(n)) {
+        if (isAllDigits(0, n)) {
             System.out.println("Yes");
-        } else {
+        }
+        else {
             System.out.println("No");
         }
     }
