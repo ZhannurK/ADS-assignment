@@ -14,8 +14,8 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
-        if (isAllDigits(input)) {
+        String n = scanner.nextLine();
+        if (isAllDigits(n)) {
             System.out.println("Yes");
         } else {
             System.out.println("No");
