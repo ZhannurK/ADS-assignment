@@ -1,6 +1,9 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int n = 7;
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
         if (isPrime(n)) {
             System.out.println("Prime");
         } else {
