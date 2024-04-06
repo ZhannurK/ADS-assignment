@@ -14,12 +14,12 @@ public class Main {
         }
     }
     public static void reverseArray(int[] arr, int start, int end) {
-        int temp = arr[start];
-        arr[start] = arr[end];
-        arr[end] = temp;
         if (start >= end) {
             return;
         }
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
         reverseArray(arr, start + 1, end - 1);
     }
 }
