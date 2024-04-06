@@ -3,16 +3,24 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int a = scanner.nextInt();
         int n = scanner.nextInt();
-        System.out.println(power(a, n));
-    }
-
-    public static long power(int a, int n) {
-        if (n == 0) {
-            return 1;
-        } else {
-            return a * power(a, n - 1);
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        reverseArray(arr, 0, n - 1);
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
         }
     }
+    public static void reverseArray(int[] arr, int start, int end) {
+        if (start >= end) {
+            return;
+        }
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        reverseArray(arr, start + 1, end - 1);
+    }
 }
+z
