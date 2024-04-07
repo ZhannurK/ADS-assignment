@@ -10,6 +10,8 @@ public class Main {
      * @param n The total number of items.
      * @param m The number of items to choose.
      * @return The binomial coefficient.
+     * Time complexity here is O(2^n) because it makes recursive calls for each combination of n and m,
+     * resulting in exponential growth.
      */
     public static int binomialCoefficient(int n, int m){
         if (m > n){
