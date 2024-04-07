@@ -24,6 +24,7 @@ public class Main{
      * @param n   The size of the array.
      * @param arr The array in which to find the minimum element.
      * @return The minimum element in the array.
+     * In this method time complexity is O(n) because it iterates through the array once
      */
     public static double FindMin(int n, int[] arr){
         int minel = arr[0];
