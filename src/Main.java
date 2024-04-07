@@ -27,6 +27,8 @@ public class Main {
      * @param arr   The array to be reversed.
      * @param start The starting index of the subarray.
      * @param end   The ending index of the subarray.
+     * Here time complexity is O(n) because it performs n/2 swaps in the worst case,
+     * where n is the length of the array.
      */
     public static void reverseArray(int[] arr, int start, int end) {
         if (start >= end) {
