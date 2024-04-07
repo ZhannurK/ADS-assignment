@@ -20,6 +20,7 @@ public class Main {
      * @param a The base number.
      * @param n The exponent.
      * @return The result of raising 'a' to the power of 'n'.
+     * In this method time complexity is O(n) because it makes n recursive calls.
      */
     public static long power(int a, int n) {
         if (n == 0) {
