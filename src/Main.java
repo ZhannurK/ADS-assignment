@@ -22,6 +22,7 @@ public class Main {
      *
      * @param n The number to check.
      * @return True if the number is prime, false otherwise.
+     * Here time complexity is O(sqrt(n)) because it iterates up to the square root of n to check for divisibility.
      */
     public static boolean isPrime(int n) {
         if (n <= 1) {
