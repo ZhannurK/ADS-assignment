@@ -11,7 +11,7 @@ public class Main {
      * @param m The number of items to choose.
      * @return The binomial coefficient.
      */
-    static int binomialCoefficient(int n, int m){
+    public static int binomialCoefficient(int n, int m){
         if (m > n){
             return 0;
         }
