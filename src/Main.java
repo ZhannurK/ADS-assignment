@@ -10,7 +10,7 @@ public class Main {
      * @param b The second number.
      * @return The greatest common divisor (GCD) of 'a' and 'b'.
      */
-    static int GCD(int a, int b){
+    public static int GCD(int a, int b){
         if (b == 0){
             return a;
         }
