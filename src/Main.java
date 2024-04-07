@@ -16,16 +16,15 @@ public class Main{
         for (int i = 0; i < n; i++){
             arr[i] = scanner.nextInt();
         }
-        System.out.println(average(n, arr));
+        System.out.println(average(arr));
     }
     /**
      * Method to calculate the average of elements in an array.
      *
-     * @param n   The size of the array.
      * @param arr The array containing the elements.
      * @return The average of elements in the array.
      */
-    public static double average(int n, int[] arr){
+    public static double average(int[] arr){
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
