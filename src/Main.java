@@ -20,6 +20,8 @@ public class Main {
      *
      * @param n The index of the Fibonacci number to calculate.
      * @return The nth Fibonacci number.
+     * This method has time complexity O(2^n) because it makes recursive calls for each Fibonacci number up to n,
+     * resulting in exponential growth.
      */
     public static int fibonacci(int n) {
         if (n <= 1) {
