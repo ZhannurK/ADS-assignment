@@ -9,6 +9,8 @@ public class Main {
      * @param a The first number.
      * @param b The second number.
      * @return The greatest common divisor (GCD) of 'a' and 'b'.
+     * Time complexity in this method is O(log(min(a, b))) because it uses the Euclidean algorithm for finding the greatest common divisor,
+     * which has logarithmic time complexity.
      */
     public static int GCD(int a, int b){
         if (b == 0){
