@@ -9,6 +9,7 @@ public class Main {
      * @param n The index of the character to check.
      * @param s The string to check.
      * @return True if all characters in the string are digits, false otherwise.
+     * This method's time complexity is O(n) because it iterates through the string once, where n is the length of the string.
      */
     public static boolean isAllDigits(int n, String s){
         if (s.isEmpty()){
