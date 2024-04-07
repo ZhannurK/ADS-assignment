@@ -23,6 +23,8 @@ public class Main{
      *
      * @param arr The array containing the elements.
      * @return The average of elements in the array.
+     * In this method Time complexity is O(n) because it iterates through the entire array once to calculate the sum,
+     * where n is the length of the array.
      */
     public static double average(int[] arr){
         int sum = 0;
