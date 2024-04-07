@@ -18,7 +18,7 @@ public class Main {
     /**
      * Entry point of the program.
      *
-     * @param args Command line arguments (not used).
+     * @param args Command line arguments.
      */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
