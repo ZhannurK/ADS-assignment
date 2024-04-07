@@ -1,6 +1,13 @@
 import java.util.Scanner;
-
+/**
+ * Program to determine if a given number "n" is prime.
+ */
 public class Main {
+    /**
+     * Entry point of the program.
+     *
+     * @param args Command line arguments.
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
@@ -10,7 +17,12 @@ public class Main {
             System.out.println("Composite");
         }
     }
-
+    /**
+     * Method to check if a number is prime.
+     *
+     * @param n The number to check.
+     * @return True if the number is prime, false otherwise.
+     */
     public static boolean isPrime(int n) {
         if (n <= 1) {
             return false;
@@ -22,5 +34,4 @@ public class Main {
         }
         return true;
     }
-
 }
