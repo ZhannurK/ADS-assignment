@@ -9,7 +9,7 @@ public class Main {
      * @param n The number for which factorial is calculated.
      * @return The factorial of the given number.
      */
-    static int factorial(int n) {
+    public static int factorial(int n) {
         if (n == 0 || n == 1)
             return 1;
         else
