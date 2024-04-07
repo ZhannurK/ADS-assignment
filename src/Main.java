@@ -10,7 +10,7 @@ public class Main {
      * @param s The string to check.
      * @return True if all characters in the string are digits, false otherwise.
      */
-    private static boolean isAllDigits(int n, String s){
+    public static boolean isAllDigits(int n, String s){
         if (s.isEmpty()){
             return true;
         }
